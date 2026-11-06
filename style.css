@@ -1,8 +1,143 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-  color: rgb(40, 197, 224);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #087e8b;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #034f59;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* WELCOME SECTION */
+.welcome {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #d9f0f2;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    color: #034f59;
+    margin-bottom: 15px;
+}
+
+/* GALLERY */
+.section-title {
+    text-align: center;
+    margin: 35px 0;
+    color: #034f59;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #087e8b;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    padding: 0 12px 20px;
+}
+
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    background-color: #d9f0f2;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.about h2 {
+    color: #034f59;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #034f59;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    nav a {
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
 }
